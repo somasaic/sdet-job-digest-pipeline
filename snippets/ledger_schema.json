@@ -1,0 +1,35 @@
+{
+  "_comment": "Real shape of a document in the persistent job-posting ledger (Step 2). Values below are placeholders — this is not a real posting.",
+  "_doc_id": "a1b2c3d4e5f60718",
+  "_doc_id_comment": "the fingerprint from fingerprint.py — this is also the document's unique key",
+
+  "company": "Acme Robotics",
+  "role": "SDET - QA Automation",
+  "location": "Bengaluru, Hybrid",
+  "source": "Indeed",
+
+  "first_seen": "2026-09-02",
+  "last_seen": "2026-09-16",
+  "_seen_comment": "last_seen is bumped, not overwritten, every time the same fingerprint resurfaces — this is how the system proves zero duplicates are ever re-shown",
+
+  "status": "recommended",
+  "_status_values": [
+    "recommended",
+    "recommended_backup",
+    "skipped_real_gap",
+    "skipped_logistics",
+    "skipped_stale",
+    "skipped_contract",
+    "volume_poster_grouped",
+    "surfaced_unscored"
+  ],
+
+  "fit_score": 82,
+  "ats_score": 78,
+  "_score_comment": "two independent fields, intentionally never merged — see docs/04-score.md",
+
+  "employment_type": "permanent",
+  "_employment_type_values": ["permanent", "contract", "unspecified"],
+
+  "url": "https://example.com/job/12345"
+}
